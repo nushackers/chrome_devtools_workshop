@@ -563,7 +563,7 @@ ENTRYPOINT ["python3", "wasg-register.py"]
 
 - `FROM` : Takes a base image
 - `RUN` : Run a command
-- `COPY` : Copy a file from our host to the **container**
+- `COPY` : Copy a file from our host to the container
 - `ENTRYPOINT` : Command to start the ‘application’, this is equivalent to running `python3 wasg-register.py`
 
 ::right::
@@ -712,7 +712,7 @@ layout: center
 This is what Docker Compose aims to address, as well as a bunch of other different issues we have with plain docker.
 
 - What if we want to run multiple containers together? I don’t want to copy and paste 10 different commands!
-- What if I want the docker containers to **communicate** with each other? (We won’t cover this in too much detail, but it’s possible for this to work!)
+- What if I want the docker containers to communicate with each other? (We won’t cover this in too much detail, but it’s possible for this to work!)
 
 ---
 layout: center
@@ -945,11 +945,11 @@ layout: center
 layout: center
 ---
 
-## Conclusion
+## Summary of key ideas
 
-- Docker -> Really cool for managing environments to deploy stuff
-- Docker Compose -> Really cool for managing variables and things around docker containers
-- Dockerfile -> Let's you write your own docker container
+- **Docker** is a containerization platform for developing, shipping, and running applications.
+- **Dockerfiles** are scripts containing commands to build Docker images.
+- **Docker Compose** allows for defining and managing multi-container Docker applications via a simple YAML file.
 
 ---
 layout: center
@@ -957,8 +957,9 @@ layout: center
 
 ## Resources to explore:
 
-- Docker for full stack deployment: https://docker-curriculum.com/
+- Docker Curriculum: https://docker-curriculum.com/
 - Really cool docker compose files: https://github.com/Haxxnet/Compose-Examples
+- Official Docker Cheatsheet: https://docs.docker.com/get-started/docker_cheatsheet.pdf
 
 ---
 layout: center
