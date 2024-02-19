@@ -9,6 +9,7 @@ info: |
   Hacker School 23/24 - Docker
 drawings:
   persist: false
+download: true
 transition: fade
 title: "Hackerschool: Docker"
 mdc: true
