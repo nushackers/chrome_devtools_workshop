@@ -67,7 +67,7 @@ class: mt-25
 * Concept 2: The Docker Hub
 * Concept 3: Connecting Volumes and Networks
 * Concept 4: Writing your own Dockerfile
-* Concept 5: Connecting **Containers** with Docker Compose
+* Concept 5: Connecting Containers with Docker Compose
 
 ::right::
 
@@ -75,7 +75,7 @@ class: mt-25
 
 * Advanced Docker Concepts
 * Orchestration tools like Kubernetes or Ansible
-* Docker as a **secure** development environment
+* Docker as a secure development environment
 
 ---
 layout: center
@@ -91,7 +91,7 @@ layout: center
 
 ## Why do we need Docker?
 
-Consider an application that requires a certain version of **Node, or Python** to run a certain application.
+Consider an application that requires a **certain version of Node, or Python** to run a certain application.
 
 - Well, what if you want to get a team to work on that project? That would mean that you would need a large amount of setup time to get them ready for development.
 - What if you want to deploy your application to multiple servers in production?
@@ -139,18 +139,18 @@ class: px-5 py-20
 
 # Images
 
-* Docker Images are **read-only templates or blueprints** for *containers*
-* You can think of it like a *published recipe for a cake*.
-    * You can't *modify* the recipe because it has been published
-    * You don't actually *make* the cake
+* Docker Images are **read-only templates or blueprints** for containers
+* You can think of it like a published recipe for a cake.
+    * You can't modify the recipe because it has been published
+    * You don't actually make the cake
 
 ::right::
 
 # Containers
 
-* Containers are **runnable instances** of *images*
-* With the same example, you can think of it as *making a cake with the recipe*.
-    * You are *executing* the sequence of steps in the recipe to make this cake
+* Containers are **runnable instances** of images
+* With the same example, you can think of it as making a cake with the recipe.
+    * You are executing the sequence of steps in the recipe to make this cake
 
 ---
 layout: image
@@ -221,7 +221,7 @@ Unable to find image <image-name> locally
 layout: center
 ---
 
-This is because `docker run` is actually a **combination** of actions:
+This is because `docker run` is actually a **combination of actions**:
 
 1. Check if we have the image
 2. If we do not have the image locally, run `docker pull` to get the image (Think of it like installing an executable)
@@ -459,7 +459,7 @@ docker run -d -p 8081:8081 -v <fill in the blanks here> ghcr.io/alexta69/metube
 layout: center
 ---
 
-# Networking Ports
+## Networking Ports
 
 Now you may notice that we like to pass in a `-p` or a `-P` argument in a lot of the examples, and we have kind of glossed through what it does.
 
