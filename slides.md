@@ -318,6 +318,49 @@ docker rmi <image_name>
 ```
 
 ---
+layout: two-cols
+class: self-center px-2
+---
+
+## Summary
+
+```bash
+// Test out if docker is working
+docker run hello-world
+
+// Emulating an ubuntu environment
+docker run -it ubuntu /bin/bash
+
+// Running different versions of the same application
+docker run -it python:3.8 python
+docker run -it python:2.7 python
+
+// View running containers
+docker ps
+docker ps -a
+
+```
+
+::right::
+
+```bash
+// Different ways to run a container
+docker run prakhar1989/static-site
+docker run --rm -it prakhar1989/static-site
+docker run -d -P --name static-site prakhar1989/static-site
+
+// Finding published ports
+docker port static-site
+
+// Stopping and removing a container
+docker stop <container-name>
+docker rm <container-name>
+
+// Removing an image
+docker rmi <image-name>
+```
+
+---
 layout: cover
 background: none
 ---
@@ -415,6 +458,32 @@ Let's explore some fun docker images we can find on docker hub!
 ```bash
 docker run xer0x/spaceinvaders // Space Invaders on your terminal!
 docker run -it spkane/starwars:latest // Watch Star Wars on your terminal
+```
+
+---
+layout: center
+---
+
+## Summary
+
+```bash
+// Pull a docker image
+docker pull/docker run <image-name>
+
+// Different image tags
+docker run -it python:3.8 python
+docker run -it python:3.8-slim python
+docker run -it python:3.8-alpine python
+
+// See instaalled images
+docker images
+
+// Specifying specific architecture
+docker run --platform linux/amd64 python:3.13
+
+// Fun Docker Images
+docker run xer0x/spaceinvaders
+docker run -it spkane/starwars:latest
 ```
 
 ---
