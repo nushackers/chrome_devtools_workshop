@@ -376,7 +376,7 @@ class: py-30 px-5
 
 The **Docker Hub** is a central repository of images we can use.
 
-To view the Docker Hub, go to [hub.docker.com](hub.docker.com)
+To view the Docker Hub, go to [hub.docker.com](https://hub.docker.com)
 
 ::right::
 
@@ -456,7 +456,7 @@ layout: center
 Let's explore some fun docker images we can find on docker hub!
 
 ```bash
-docker run xer0x/spaceinvaders // Space Invaders on your terminal!
+docker run -it xer0x/spaceinvaders // Space Invaders on your terminal!
 docker run -it spkane/starwars:latest // Watch Star Wars on your terminal
 ```
 
@@ -516,6 +516,10 @@ layout: center
 
 Here's a really cool docker container that allows us to download youtube videos with a UI.
 
+Given that we know the docker directory location is `/downloads`, map our volumes so we can also see the downloaded vidoes on our computer as well.
+
+> You can visit the site at `localhost:8081`
+
 ```bash
 docker run -d -p 8081:8081 -v <fill in the blanks here> ghcr.io/alexta69/metube
 ```
@@ -564,7 +568,11 @@ layout: center
 
 # Exercise
 
+Here's another cool docker image that allows us to play manipulate PDFs.
+
 Can you figure out how to map this Docker container such that we can use it?
+
+> This docker container uses the port `8080`
 
 ```bash
 // Sterling PDF:
@@ -575,7 +583,7 @@ docker run -d \
   frooodle/s-pdf:latest
 ```
 
-> This docker container uses the port `8080`
+* `-e`: Set an environment variable
 
 ---
 layout: center
