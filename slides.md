@@ -6,12 +6,12 @@ highlighter: shikiji
 lineNumbers: false
 favicon: /quackers.png
 info: |
-  Hacker Tools 24/25 - Chrome Dev Tools
+  Hacker School 23/24 - Docker
 drawings:
   persist: false
 download: true
 transition: fade
-title: "Hackertools: Chrome Dev Tools"
+title: "Hackerschool: Docker"
 mdc: true
 fonts:
   sans: "Inter Tight"
@@ -30,7 +30,7 @@ layout: center
 
 # Slides
 
-[https://nushackers.github.io/chrome_devtools_workshop](https://nushackers.github.io/chrome_devtools_workshop)
+[https://nushackers.github.io/chrome_devtools_slides](https://nushackers.github.io/chrome_devtools_slides)
 
 ![slides_qr](/slides_link.png)
 
@@ -86,7 +86,6 @@ A browser is an application that:
 Modern browsers, like Chrome, have tools that help developers **inspect and optimize** the pages they build.
 
 ---
-
 layout: center
 ---
 
@@ -109,7 +108,6 @@ DevTools is a set of **built-in debugging tools** in Chrome that allow you to:
 6. **Application:** Inspect storage, cookies, and cache.
 
 ---
-
 layout: two-cols
 class: px-5 self-center
 ---
@@ -134,7 +132,6 @@ This is especially useful for:
 Right-click any element on the page and select **"Inspect"**.
 
 ---
-
 layout: center
 ---
 
@@ -154,7 +151,6 @@ The **Console tab** is a powerful tool for debugging and testing JavaScript in r
 - **Handling Errors:** Capture and display errors and warnings in your code.
 
 ---
-
 layout: two-cols
 class: px-5 self-center
 ---
@@ -175,7 +171,6 @@ This helps in:
 - **Fixing bugs** without needing to rely solely on `console.log()`.
 
 ---
-
 layout: center
 ---
 
@@ -196,7 +191,6 @@ This is especially useful for:
 - Seeing which resources might be **blocking rendering**.
 
 ---
-
 layout: center
 ---
 
@@ -229,5 +223,3 @@ background: none
 
 # What's next?
 
-two-cols
-class: mt-25
