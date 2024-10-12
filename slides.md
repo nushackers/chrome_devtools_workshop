@@ -6,12 +6,12 @@ highlighter: shikiji
 lineNumbers: false
 favicon: /quackers.png
 info: |
-  Hacker School 23/24 - Docker
+  Hacker Tools 24/25 - Chrome Dev Tools
 drawings:
   persist: false
 download: true
 transition: fade
-title: "Hackerschool: Docker"
+title: "Hackertools: Chrome Dev Tools"
 mdc: true
 fonts:
   sans: "Inter Tight"
@@ -30,7 +30,7 @@ layout: center
 
 # Slides
 
-[https://nushackers.github.io/chrome_devtools_slides](https://nushackers.github.io/chrome_devtools_slides)
+[https://nushackers.github.io/chrome_devtools_workshop](https://nushackers.github.io/chrome_devtools_workshop)
 
 ![slides_qr](/slides_link.png)
 
@@ -229,3 +229,5 @@ background: none
 
 # What's next?
 
+two-cols
+class: mt-25
