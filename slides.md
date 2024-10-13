@@ -1,17 +1,17 @@
 ---
-theme: seriph
+theme: dracula
 class: text-center
 background: none
-highlighter: shikiji
+highlighter: shiki
 lineNumbers: false
 favicon: /quackers.png
 info: |
-  Hacker School 23/24 - Docker
+  Hacker Tools 24/25 - Chrome Devtools
 drawings:
   persist: false
 download: true
 transition: fade
-title: "Hackerschool: Docker"
+title: "Hackertools: Chrome Devtools"
 mdc: true
 fonts:
   sans: "Inter Tight"
@@ -20,9 +20,9 @@ fonts:
 layout: center
 ---
 
-# Hackerschool:
+# HackerTools: Chrome Devtools
 
-<img src="/docker-logo.png" class="m-20 h-60" />
+<img src="/devtools-logo.png" class="ml-30 mt-10 h-60" />
 
 ---
 layout: center
@@ -30,9 +30,9 @@ layout: center
 
 # Slides
 
-[https://nushackers.github.io/chrome_devtools_slides](https://nushackers.github.io/chrome_devtools_slides)
+[**https://nushackers.github.io/chrome_devtools_slides**](https://nushackers.github.io/chrome_devtools_slides)
 
-![slides_qr](/slides_link.png)
+<img src="/slides_link.png" class="ml-25 h-60" />
 
 ---
 layout: center
@@ -58,9 +58,7 @@ layout: center
 layout: center
 ---
 
-# Official Chrome Devtools Documentation
-
-[`https://developer.chrome.com/docs/devtools/`](https://developer.chrome.com/docs/devtools/)
+# [Official Chrome Devtools Documentation](https://developer.chrome.com/docs/devtools/)
 
 ---
 layout: center
@@ -75,15 +73,17 @@ layout: center
 * Debugging client-side Javascript
 * Viewing network requests
 
-## Understanding What a Browser Is
+---
+layout: center
+---
+## What is a (Web) Browser?
 
 A browser is an application that:
 
 - **Requests and renders web pages** from the internet.
-- Acts as the interface between **you and the web server**.
 - Manages **HTML, CSS, and JavaScript** to create interactive experiences.
 
-Modern browsers, like Chrome, have tools that help developers **inspect and optimize** the pages they build.
+Modern browsers, like Chrome, have tools that help developers inspect and optimize the pages they build.
 
 ---
 layout: center
@@ -91,35 +91,49 @@ layout: center
 
 ## Overview of DevTools
 
-DevTools is a set of **built-in debugging tools** in Chrome that allow you to:
+DevTools is built directly in the browser and allows you to edit pages on-the-fly and diagnose problems quickly. Some features include:
 
 - **Inspect HTML and CSS** to understand how a webpage is built.
 - **Debug JavaScript** to find and fix errors in code execution.
 - **Monitor network traffic** to see all files and resources a page loads.
 - Optimize performance and improve **user experience** by analyzing load times.
 
-### Key Panels:
+---
+layout: center
+---
+# Opening Devtools
+## Mouse
+
+Open Elements Panel: `Right Click -> Inspect`
+
+## Shorcuts
+|OS|Elements|Console|Last Panel|
+|:---|:---|:---|:---|
+|Windows / Linux|`Ctrl + Shift + C`|`Ctrl + Shift + J` |`F12` <br> `Ctrl + Shift + I`|
+|Mac|	`Cmd + Option + C`|	`Cmd + Option + J`|	`Fn + F12` <br> `Cmd + Option + I`|
+
+---
+layout: center
+---
+
+## Key Panels:
 
 1. **Elements:** View and modify HTML & CSS.
 2. **Console:** Run JavaScript commands and see log messages.
-3. **Network:** Track requests made by the browser.
-4. **Sources:** Debug JavaScript.
-5. **Performance:** Analyze runtime performance.
-6. **Application:** Inspect storage, cookies, and cache.
+3. **Sources:** View website's resources and debug Javascript.
+4. **Network:** Track requests made by the browser.
+
 
 ---
-layout: two-cols
-class: px-5 self-center
+layout: center
 ---
 
-## Inspect Elements
+# Inspect Elements
 
 The **Elements panel** allows you to:
-
-- **View and modify HTML** directly to see changes in real-time.
+- **Edit ~~HTML~~ the DOM** and see changes in real-time.
 - See the **CSS rules applied** to each element.
 - Modify styles on the fly to experiment with layout and design.
-- **Analyze box models** for elements (e.g., padding, margin, borders).
 
 This is especially useful for:
 
@@ -127,9 +141,16 @@ This is especially useful for:
 - Identifying **styling issues**.
 - Quickly testing visual changes.
 
-### How to Access:
+---
+layout: default
+---
+# Let's try it out
 
-Right-click any element on the page and select **"Inspect"**.
+## [DOM Exercise](https://developer.chrome.com/docs/devtools/dom)  
+
+<br>
+
+## [CSS Exercise](https://developer.chrome.com/docs/devtools/css)
 
 ---
 layout: center
@@ -151,8 +172,14 @@ The **Console tab** is a powerful tool for debugging and testing JavaScript in r
 - **Handling Errors:** Capture and display errors and warnings in your code.
 
 ---
-layout: two-cols
-class: px-5 self-center
+layout: default
+---
+
+# Let's try it out
+## [`console.log()` demo](https://devtools.glitch.me/console/log.html)
+
+---
+layout: center
 ---
 
 ## Debugging Client-side JavaScript
@@ -189,16 +216,6 @@ This is especially useful for:
 - Identifying **bottlenecks** in page load performance.
 - Troubleshooting **API requests** that may be failing or slow.
 - Seeing which resources might be **blocking rendering**.
-
----
-layout: center
----
-
-## Use Cases for Viewing Network Requests
-
-- Check how many **third-party scripts** or resources are being loaded.
-- Monitor how **caching** affects page performance.
-- Debug issues with **AJAX** or **fetch** requests.
 
 ---
 layout: center
