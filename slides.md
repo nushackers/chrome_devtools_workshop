@@ -198,6 +198,18 @@ This helps in:
 - **Fixing bugs** without needing to rely solely on `console.log()`.
 
 ---
+layout: default
+---
+
+# Let's Try it out!
+## [`Simple Password Checker` Exercise](https://web.for.idiot.sg/final-section-lets-get-flag-8008.html)  
+
+<br> 
+
+## [`Harder Password Checker` Exercise](https://oceankoh.github.io/reversing-with-devtools/)
+
+
+---
 layout: center
 ---
 
@@ -221,6 +233,18 @@ This is especially useful for:
 layout: center
 ---
 
+# Let's Try it out!
+## Can you answer these questions about [`NUSMods](https://nusmods.com)
+
+* What (deprecated) service/APIs does the NUSMods site query?
+* When are these network requests made?
+* Can you identify the function that performs the request?
+
+
+---
+layout: center
+---
+
 # And that's it!
 
 ---
@@ -231,7 +255,7 @@ layout: center
 
 Let us know your thoughts on this workshop!
 
-<img src="/feedback.jpeg" class="m-10 h-60" />
+<img src="/feedback.png" class="m-10 h-60" />
 
 ---
 layout: cover
