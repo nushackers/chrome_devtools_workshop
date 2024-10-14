@@ -30,7 +30,7 @@ layout: center
 
 # Slides
 
-[**https://nushackers.github.io/chrome_devtools_slides**](https://nushackers.github.io/chrome_devtools_slides)
+[**https://nushackers.github.io/chrome_devtools_workshop**](https://nushackers.github.io/chrome_devtools_workshop)
 
 <img src="/slides_link.png" class="ml-25 h-60" />
 
