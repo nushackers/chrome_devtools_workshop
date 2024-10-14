@@ -234,12 +234,11 @@ layout: center
 ---
 
 # Let's Try it out!
-## Can you answer these questions about [`NUSMods](https://nusmods.com)
+## Can you answer these questions about [**NUSMods**](https://nusmods.com)
 
 * What (deprecated) service/APIs does the NUSMods site query?
 * When are these network requests made?
 * Can you identify the function that performs the request?
-
 
 ---
 layout: center
